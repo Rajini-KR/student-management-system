@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+<h2>
+
+Welcome {{ request.user.first_name }}
+
+</h2>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="card text-center">
+
+<div class="card-body">
+
+<h3>{{ total_students }}</h3>
+
+Students
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center">
+
+<div class="card-body">
+
+<h3>{{ total_departments }}</h3>
+
+Departments
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center">
+
+<div class="card-body">
+
+<h3>{{ total_courses }}</h3>
+
+Courses
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center">
+
+<div class="card-body">
+
+<h3>{{ average_cgpa|floatformat:2 }}</h3>
+
+Average CGPA
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<h5>
+
+Logged in as
+
+<span class="badge bg-primary">
+
+{{ request.user.role }}
+
+</span>
+
+</h5>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+body{
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1,h2,h3{
+    color: #343a40;
+}
+.card{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+table{
+    background: #f8f9fa;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 24px;
+}
